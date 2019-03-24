@@ -16,7 +16,7 @@ GPL (https://en.wikipedia.org/wiki/GNU_General_Public_License)
 qs.script.include("scripts/lib.js");
 
 /*-- Say something with classic console.log() ----*/
-console.log('Sunning main script');
+console.log('Running main script');
 
 /*-- Create some regular javascript object ----*/
 var today = new Date();	

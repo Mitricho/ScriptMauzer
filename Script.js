@@ -2,7 +2,7 @@
 /*-- Include other scrips ----*/
 qs.script.include("scripts/lib.js");
 
-console.log('Sunning main script');
+console.log('Running main script');
 
 var today = new Date();	
 

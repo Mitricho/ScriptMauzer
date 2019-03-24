@@ -1,5 +1,5 @@
-/*
-	Copyright 2010 © Dmitry Philonenko.
+п»ї/*
+	Copyright 2010 В© Dmitry Philonenko.
 	
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -14,18 +14,18 @@
     You should have received a copy of the GNU General Public License
     along with this program. See COPYING file. If not, see <https://www.gnu.org/licenses/>.
 
-  (Это свободная программа: вы можете перераспространять ее и/или изменять
-   ее на условиях Стандартной общественной лицензии GNU в том виде, в каком
-   она была опубликована Фондом свободного программного обеспечения; либо
-   версии 3 лицензии, либо (по вашему выбору) любой более поздней версии.
+  (Р­С‚Рѕ СЃРІРѕР±РѕРґРЅР°СЏ РїСЂРѕРіСЂР°РјРјР°: РІС‹ РјРѕР¶РµС‚Рµ РїРµСЂРµСЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏС‚СЊ РµРµ Рё/РёР»Рё РёР·РјРµРЅСЏС‚СЊ
+   РµРµ РЅР° СѓСЃР»РѕРІРёСЏС… РЎС‚Р°РЅРґР°СЂС‚РЅРѕР№ РѕР±С‰РµСЃС‚РІРµРЅРЅРѕР№ Р»РёС†РµРЅР·РёРё GNU РІ С‚РѕРј РІРёРґРµ, РІ РєР°РєРѕРј
+   РѕРЅР° Р±С‹Р»Р° РѕРїСѓР±Р»РёРєРѕРІР°РЅР° Р¤РѕРЅРґРѕРј СЃРІРѕР±РѕРґРЅРѕРіРѕ РїСЂРѕРіСЂР°РјРјРЅРѕРіРѕ РѕР±РµСЃРїРµС‡РµРЅРёСЏ; Р»РёР±Рѕ
+   РІРµСЂСЃРёРё 3 Р»РёС†РµРЅР·РёРё, Р»РёР±Рѕ (РїРѕ РІР°С€РµРјСѓ РІС‹Р±РѕСЂСѓ) Р»СЋР±РѕР№ Р±РѕР»РµРµ РїРѕР·РґРЅРµР№ РІРµСЂСЃРёРё.
 
-   Эта программа распространяется в надежде, что она будет полезной,
-   но БЕЗО ВСЯКИХ ГАРАНТИЙ; даже без неявной гарантии ТОВАРНОГО ВИДА
-   или ПРИГОДНОСТИ ДЛЯ ОПРЕДЕЛЕННЫХ ЦЕЛЕЙ. Подробнее см. в Стандартной
-   общественной лицензии GNU.
+   Р­С‚Р° РїСЂРѕРіСЂР°РјРјР° СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏРµС‚СЃСЏ РІ РЅР°РґРµР¶РґРµ, С‡С‚Рѕ РѕРЅР° Р±СѓРґРµС‚ РїРѕР»РµР·РЅРѕР№,
+   РЅРѕ Р‘Р•Р—Рћ Р’РЎРЇРљРРҐ Р“РђР РђРќРўРР™; РґР°Р¶Рµ Р±РµР· РЅРµСЏРІРЅРѕР№ РіР°СЂР°РЅС‚РёРё РўРћР’РђР РќРћР“Рћ Р’РР”Рђ
+   РёР»Рё РџР РР“РћР”РќРћРЎРўР Р”Р›РЇ РћРџР Р•Р”Р•Р›Р•РќРќР«РҐ Р¦Р•Р›Р•Р™. РџРѕРґСЂРѕР±РЅРµРµ СЃРј. РІ РЎС‚Р°РЅРґР°СЂС‚РЅРѕР№
+   РѕР±С‰РµСЃС‚РІРµРЅРЅРѕР№ Р»РёС†РµРЅР·РёРё GNU.
 
-   Вы должны были получить копию Стандартной общественной лицензии GNU
-   вместе с этой программой. Если это не так, см.
+   Р’С‹ РґРѕР»Р¶РЅС‹ Р±С‹Р»Рё РїРѕР»СѓС‡РёС‚СЊ РєРѕРїРёСЋ РЎС‚Р°РЅРґР°СЂС‚РЅРѕР№ РѕР±С‰РµСЃС‚РІРµРЅРЅРѕР№ Р»РёС†РµРЅР·РёРё GNU
+   РІРјРµСЃС‚Рµ СЃ СЌС‚РѕР№ РїСЂРѕРіСЂР°РјРјРѕР№. Р•СЃР»Рё СЌС‚Рѕ РЅРµ С‚Р°Рє, СЃРј.
    <https://www.gnu.org/licenses/>.)
 */
 /*---------------------------------------------------------------------------------------*/
@@ -318,7 +318,7 @@ QScriptValue getFileVer(QScriptContext *context, QScriptEngine *engine){
         clKey.replace(QString("?"),r);
         clKey.replace(QString("'"),r);
         clKey.replace(QString("\""),r);
-        clKey.replace(QString("№").toLatin1(),r);
+        clKey.replace(QString("в„–").toLatin1(),r);
         clKey.replace(QString(":"),r);
         clKey.replace(QString(","),r);
         if(isFilename){
@@ -331,73 +331,73 @@ QScriptValue getFileVer(QScriptContext *context, QScriptEngine *engine){
     QString translit(QString ret)
     {
         //qDebug() << QString("Transliterate str: %1").arg(ret);
-        ret.replace(QString("а"),QString("a"), Qt::CaseSensitive);
-        ret.replace(QString("б"),QString("b"),Qt::CaseSensitive);
-        ret.replace(QString("в"),QString("v"),Qt::CaseSensitive);
-        ret.replace(QString("г"),QString("g"),Qt::CaseSensitive);
-        ret.replace(QString("д"),QString("d"),Qt::CaseSensitive);
-        ret.replace(QString("е"),QString("e"),Qt::CaseSensitive);
-        ret.replace(QString("ё"),QString("yo"),Qt::CaseSensitive);
-        ret.replace(QString("ж"),QString("zh"),Qt::CaseSensitive);
-        ret.replace(QString("з"),QString("z"),Qt::CaseSensitive);
-        ret.replace(QString("й"),QString("i"),Qt::CaseSensitive);
-        ret.replace(QString("и"),QString("i"),Qt::CaseSensitive);
-        ret.replace(QString("к"),QString("k"),Qt::CaseSensitive);
-        ret.replace(QString("л"),QString("l"),Qt::CaseSensitive);
-        ret.replace(QString("м"),QString("m"),Qt::CaseSensitive);
-        ret.replace(QString("н"),QString("n"),Qt::CaseSensitive);
-        ret.replace(QString("о"),QString("o"),Qt::CaseSensitive);
-        ret.replace(QString("п"),QString("p"),Qt::CaseSensitive);
-        ret.replace(QString("р"),QString("r"),Qt::CaseSensitive);
-        ret.replace(QString("с"),QString("s"),Qt::CaseSensitive);
-        ret.replace(QString("т"),QString("t"),Qt::CaseSensitive);
-        ret.replace(QString("у"),QString("u"),Qt::CaseSensitive);
-        ret.replace(QString("ф"),QString("f"),Qt::CaseSensitive);
-        ret.replace(QString("х"),QString("ch"),Qt::CaseSensitive);
-        ret.replace(QString("ц"),QString("z"),Qt::CaseSensitive);
-        ret.replace(QString("ч"),QString("ch"),Qt::CaseSensitive);
-        ret.replace(QString("ш"),QString("sh"),Qt::CaseSensitive);
-        ret.replace(QString("щ"),QString("ch"),Qt::CaseSensitive);
-        ret.replace(QString("ъ"),QString(""),Qt::CaseSensitive);
-        ret.replace(QString("ы"),QString("y"),Qt::CaseSensitive);
-        ret.replace(QString("ь"),QString(""),Qt::CaseSensitive);
-        ret.replace(QString("э"),QString("ye"),Qt::CaseSensitive);
-        ret.replace(QString("ю"),QString("yu"),Qt::CaseSensitive);
-        ret.replace(QString("я"),QString("ya"),Qt::CaseSensitive);
+        ret.replace(QString("Р°"),QString("a"), Qt::CaseSensitive);
+        ret.replace(QString("Р±"),QString("b"),Qt::CaseSensitive);
+        ret.replace(QString("РІ"),QString("v"),Qt::CaseSensitive);
+        ret.replace(QString("Рі"),QString("g"),Qt::CaseSensitive);
+        ret.replace(QString("Рґ"),QString("d"),Qt::CaseSensitive);
+        ret.replace(QString("Рµ"),QString("e"),Qt::CaseSensitive);
+        ret.replace(QString("С‘"),QString("yo"),Qt::CaseSensitive);
+        ret.replace(QString("Р¶"),QString("zh"),Qt::CaseSensitive);
+        ret.replace(QString("Р·"),QString("z"),Qt::CaseSensitive);
+        ret.replace(QString("Р№"),QString("i"),Qt::CaseSensitive);
+        ret.replace(QString("Рё"),QString("i"),Qt::CaseSensitive);
+        ret.replace(QString("Рє"),QString("k"),Qt::CaseSensitive);
+        ret.replace(QString("Р»"),QString("l"),Qt::CaseSensitive);
+        ret.replace(QString("Рј"),QString("m"),Qt::CaseSensitive);
+        ret.replace(QString("РЅ"),QString("n"),Qt::CaseSensitive);
+        ret.replace(QString("Рѕ"),QString("o"),Qt::CaseSensitive);
+        ret.replace(QString("Рї"),QString("p"),Qt::CaseSensitive);
+        ret.replace(QString("СЂ"),QString("r"),Qt::CaseSensitive);
+        ret.replace(QString("СЃ"),QString("s"),Qt::CaseSensitive);
+        ret.replace(QString("С‚"),QString("t"),Qt::CaseSensitive);
+        ret.replace(QString("Сѓ"),QString("u"),Qt::CaseSensitive);
+        ret.replace(QString("С„"),QString("f"),Qt::CaseSensitive);
+        ret.replace(QString("С…"),QString("ch"),Qt::CaseSensitive);
+        ret.replace(QString("С†"),QString("z"),Qt::CaseSensitive);
+        ret.replace(QString("С‡"),QString("ch"),Qt::CaseSensitive);
+        ret.replace(QString("С€"),QString("sh"),Qt::CaseSensitive);
+        ret.replace(QString("С‰"),QString("ch"),Qt::CaseSensitive);
+        ret.replace(QString("СЉ"),QString(""),Qt::CaseSensitive);
+        ret.replace(QString("С‹"),QString("y"),Qt::CaseSensitive);
+        ret.replace(QString("СЊ"),QString(""),Qt::CaseSensitive);
+        ret.replace(QString("СЌ"),QString("ye"),Qt::CaseSensitive);
+        ret.replace(QString("СЋ"),QString("yu"),Qt::CaseSensitive);
+        ret.replace(QString("СЏ"),QString("ya"),Qt::CaseSensitive);
 
-        ret.replace("А","A",Qt::CaseSensitive);
-        ret.replace("Б","B",Qt::CaseSensitive);
-        ret.replace("В","V",Qt::CaseSensitive);
-        ret.replace("Г","G",Qt::CaseSensitive);
-        ret.replace("Д","D",Qt::CaseSensitive);
-        ret.replace("Е","E",Qt::CaseSensitive);
-        ret.replace("Ё","YE",Qt::CaseSensitive);
-        ret.replace("Ж","ZH",Qt::CaseSensitive);
-        ret.replace("З","Z",Qt::CaseSensitive);
-        ret.replace("Й","I",Qt::CaseSensitive);
-        ret.replace("И","I",Qt::CaseSensitive);
-        ret.replace("К","K",Qt::CaseSensitive);
-        ret.replace("Л","L",Qt::CaseSensitive);
-        ret.replace("М","M",Qt::CaseSensitive);
-        ret.replace("Н","N",Qt::CaseSensitive);
-        ret.replace("О","O",Qt::CaseSensitive);
-        ret.replace("П","P",Qt::CaseSensitive);
-        ret.replace("Р","R",Qt::CaseSensitive);
-        ret.replace("С","S",Qt::CaseSensitive);
-        ret.replace("Т","T",Qt::CaseSensitive);
-        ret.replace("У","U",Qt::CaseSensitive);
-        ret.replace("Ф","F",Qt::CaseSensitive);
-        ret.replace("Х","CH",Qt::CaseSensitive);
-        ret.replace("Ц","Z",Qt::CaseSensitive);
-        ret.replace("Ч","CH",Qt::CaseSensitive);
-        ret.replace("Ш","SH",Qt::CaseSensitive);
-        ret.replace("Щ","CH",Qt::CaseSensitive);
-        ret.replace("Ъ","",Qt::CaseSensitive);
-        ret.replace("Ы","Y",Qt::CaseSensitive);
-        ret.replace("Ь","",Qt::CaseSensitive);
-        ret.replace("Э","YE",Qt::CaseSensitive);
-        ret.replace("Ю","YU",Qt::CaseSensitive);
-        ret.replace("Я","YA",Qt::CaseSensitive);
+        ret.replace("Рђ","A",Qt::CaseSensitive);
+        ret.replace("Р‘","B",Qt::CaseSensitive);
+        ret.replace("Р’","V",Qt::CaseSensitive);
+        ret.replace("Р“","G",Qt::CaseSensitive);
+        ret.replace("Р”","D",Qt::CaseSensitive);
+        ret.replace("Р•","E",Qt::CaseSensitive);
+        ret.replace("РЃ","YE",Qt::CaseSensitive);
+        ret.replace("Р–","ZH",Qt::CaseSensitive);
+        ret.replace("Р—","Z",Qt::CaseSensitive);
+        ret.replace("Р™","I",Qt::CaseSensitive);
+        ret.replace("Р","I",Qt::CaseSensitive);
+        ret.replace("Рљ","K",Qt::CaseSensitive);
+        ret.replace("Р›","L",Qt::CaseSensitive);
+        ret.replace("Рњ","M",Qt::CaseSensitive);
+        ret.replace("Рќ","N",Qt::CaseSensitive);
+        ret.replace("Рћ","O",Qt::CaseSensitive);
+        ret.replace("Рџ","P",Qt::CaseSensitive);
+        ret.replace("Р ","R",Qt::CaseSensitive);
+        ret.replace("РЎ","S",Qt::CaseSensitive);
+        ret.replace("Рў","T",Qt::CaseSensitive);
+        ret.replace("РЈ","U",Qt::CaseSensitive);
+        ret.replace("Р¤","F",Qt::CaseSensitive);
+        ret.replace("РҐ","CH",Qt::CaseSensitive);
+        ret.replace("Р¦","Z",Qt::CaseSensitive);
+        ret.replace("Р§","CH",Qt::CaseSensitive);
+        ret.replace("РЁ","SH",Qt::CaseSensitive);
+        ret.replace("Р©","CH",Qt::CaseSensitive);
+        ret.replace("РЄ","",Qt::CaseSensitive);
+        ret.replace("Р«","Y",Qt::CaseSensitive);
+        ret.replace("Р¬","",Qt::CaseSensitive);
+        ret.replace("Р­","YE",Qt::CaseSensitive);
+        ret.replace("Р®","YU",Qt::CaseSensitive);
+        ret.replace("РЇ","YA",Qt::CaseSensitive);
 
         //qDebug() << QString("translit string: %1").arg(ret);
 
@@ -427,9 +427,9 @@ QScriptValue getFileVer(QScriptContext *context, QScriptEngine *engine){
 /*---------------------------------------------------------------------------------------*/
     QScriptValue imageColor(QScriptContext *context, QScriptEngine *engine)
     {
-        /*  Использование из JavaScript:
+        /*  РСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ РёР· JavaScript:
             imageColor(path, xPos="left",yPos="top");
-            либо:
+            Р»РёР±Рѕ:
             imageColor(path, xPos=20,yPos=38);*/
 
         QString def("#000000");
@@ -893,7 +893,7 @@ QScriptValue getFileVer(QScriptContext *context, QScriptEngine *engine){
         foreach (QFileInfo fileInfo, files){
             QString fname = fileInfo.fileName();
             if(fileList.contains(fname,Qt::CaseInsensitive)){
-                //мы нашли в папке файл, который указан в списке файлов
+                //РјС‹ РЅР°С€Р»Рё РІ РїР°РїРєРµ С„Р°Р№Р», РєРѕС‚РѕСЂС‹Р№ СѓРєР°Р·Р°РЅ РІ СЃРїРёСЃРєРµ С„Р°Р№Р»РѕРІ
                 qDebug() << "Ok. File is in list: " % fileInfo.absoluteFilePath();
             }else{
                 bool ok;
@@ -1007,12 +1007,12 @@ QString minimizeCss(const QString &body)
         return engine->toScriptValue(false);
     }
 /*----------------------------------------------------------------------------------------*/
-    void _copyToDir(const QString &srceDir, // откуда
-                   const QString &destDir,  // куда
-                   const QString &nFilter,  // расширения файлов, которые надо копировать
-                   bool deleteSource,       // стереть исх. папку? Режим перемещения папки
+    void _copyToDir(const QString &srceDir, // РѕС‚РєСѓРґР°
+                   const QString &destDir,  // РєСѓРґР°
+                   const QString &nFilter,  // СЂР°СЃС€РёСЂРµРЅРёСЏ С„Р°Р№Р»РѕРІ, РєРѕС‚РѕСЂС‹Рµ РЅР°РґРѕ РєРѕРїРёСЂРѕРІР°С‚СЊ
+                   bool deleteSource,       // СЃС‚РµСЂРµС‚СЊ РёСЃС…. РїР°РїРєСѓ? Р РµР¶РёРј РїРµСЂРµРјРµС‰РµРЅРёСЏ РїР°РїРєРё
                    const QString &excludeItemsContaining,
-                   const QString &excludeItemsContainTwo) //копировать, исключая файлы или папки содержащие эту подстроку
+                   const QString &excludeItemsContainTwo) //РєРѕРїРёСЂРѕРІР°С‚СЊ, РёСЃРєР»СЋС‡Р°СЏ С„Р°Р№Р»С‹ РёР»Рё РїР°РїРєРё СЃРѕРґРµСЂР¶Р°С‰РёРµ СЌС‚Сѓ РїРѕРґСЃС‚СЂРѕРєСѓ
     {
         QFileInfo dinf(srceDir);
         if(dinf.isDir() && dinf.exists())
@@ -1029,7 +1029,7 @@ QString minimizeCss(const QString &body)
                 qDebug() << "Make mkpath: " + destDir;
                 d.mkpath(destDir);
                 QFileInfoList files = d.entryInfoList();
-                QStringList filters = nFilter.contains(",")?nFilter.split(","):QStringList() << nFilter;//Ждем строку типа '*.cpp,*.cxx,*.cc'
+                QStringList filters = nFilter.contains(",")?nFilter.split(","):QStringList() << nFilter;//Р–РґРµРј СЃС‚СЂРѕРєСѓ С‚РёРїР° '*.cpp,*.cxx,*.cc'
                 d.setNameFilters(filters);
                 foreach (QFileInfo fileInfo, files)
                 {
@@ -1056,7 +1056,7 @@ QString minimizeCss(const QString &body)
                         }
                     }
                 }
-                if(deleteSource){//Удалить старую папку
+                if(deleteSource){//РЈРґР°Р»РёС‚СЊ СЃС‚Р°СЂСѓСЋ РїР°РїРєСѓ
                     qDebug() << "Rem dir: " + srceDir;
                     bool okRem = removeDir(srceDir);
                     if(!okRem)
@@ -1215,7 +1215,7 @@ QString minimizeCss(const QString &body)
         if(context->argumentCount() > 0)
         {
             QString filePath = context->argument(0).toString();
-          //Рабочая папка
+          //Р Р°Р±РѕС‡Р°СЏ РїР°РїРєР°
             /*QString currScriptPath = engine->globalObject().property("qs").property("script").property("absoluteFilePath").toString();
             QFileInfo workFile(currScriptPath);
             QDir workDir(workFile.absoluteFilePath());
